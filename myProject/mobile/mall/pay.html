@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>支付</title>
+
+<link rel="stylesheet" href="css/mobiles.css" />
+<script src="touchSlide/TouchSlide.1.1.js" type="text/javascript"></script>
+
+<!-- www.yongneng.net.cn/wordpress Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?e0508b4db7465773164cfef7b98071cd";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<header class="headerTop " > 
+	<span onclick="javascript:window.history.go(-1);" class="headerBack"></span>
+	<h1 class="headerLogo"><img src="img/pay_logo.jpg" width="70%" alt="" style="margin-left: 23%;" ></h1>
+</header>
+<section class="page page_footer page_header">
+	
+	<form>
+		<div class="payList">
+			<ul>
+				<li>
+					<a href="address.html">
+						<div class="payAddress clearfix">
+							<i></i>
+							<div class="payAddressF">
+								<p class="payAddressF_h">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：<span>广东省 广州市 天河区 华夏路30号富力盈通大厦601</span></p>
+								<p class="payAddressF_h">联系方式：<span>张小姐<br />13800000000</span></p>
+							</div>
+							<span>&gt;</span>
+						</div>  			
+					</a>
+				</li>
+				<li>
+					<p class="payList_h">支付方式</p>
+					<label class="payList_con">
+						<input type="radio" name="payWay" value="payWeiXin" class="hidden_radio">
+						<span class="radio_btn"></span>
+						微信支付
+					</label>
+					<br />
+					<label class="payList_con">
+						<input type="radio" name="payWay" value="payZhiFuBao" class="hidden_radio">
+						<span class="radio_btn"></span>
+						支付宝支付
+					</label>
+				</li>
+				<li>
+					<p class="payList_h">收货时间</p>
+					<label class="payList_con">
+						<input type="radio" name="payReTime" value="payTA" class="hidden_radio">
+						<span class="radio_btn"></span>
+						不限，随时准备着!
+					</label>
+					<br />
+					<label class="payList_con">
+						<input type="radio" name="payReTime" value="payTB" class="hidden_radio">
+						<span class="radio_btn"></span>
+						只能周一到周五送哦~
+					</label>
+					<br />
+					<label class="payList_con">
+						<input type="radio" name="payReTime" value="payTC" class="hidden_radio">
+						<span class="radio_btn"></span>
+						只能周末送哦~
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="payRemark ">
+			<div class="payRemarkTop clearfix">
+				<p class="payRemarkTop_l">订单备注</p>
+				<a class="payRemarkTop_r" href="###">确定</a>
+			</div>
+			<textarea></textarea>
+		</div>
+		
+	</form>
+    
+    
+</section>
+<footer class="footer">
+    <a href="orders.html" class="pay_footer">确认订单</a>
+</footer>
+</body>
+</html>

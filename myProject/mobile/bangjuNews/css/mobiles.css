@@ -1,0 +1,116 @@
+/*==========全局==========*/
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%;}
+body{font-family: "Microsoft Yahei",Helvetica, Arial, sans-serif,"iconfont"  !important; font-size: 1.4rem; color:#333; background: #FFFFFF;}
+body, button, input, optgroup, select, textarea, h1, h2, h3, h4, h5, h6, p, figure, form, blockquote, ul, ol, li, dl, dd{margin:0;padding:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{display: block;}
+input[type="button"], input[type="submit"], input[type="reset"]{-webkit-appearance:none;}
+img{vertical-align:middle; max-width:100%; border:0;}
+ul,ol{list-style:none;}
+input,textarea,select{outline:none; font-size:100%;}
+a{color:#333; text-decoration: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.table{border-collapse:collapse; border-spacing:0;}
+.clear{clear:both; height:0; overflow:hidden;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.ui-hidden{display:none;}
+.ui-block{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+html,body{height:99.9%; min-height:100%; position:relative;}
+.page{width:100%; min-height:100%; position:absolute; top:0; left:0; overflow-x:hidden;}
+.page_header{padding-top:44px;}
+.page_footer{padding-bottom: 49px;}
+.page_header_footer{padding: 44px 0 49px 0;}
+.page_full{width:100%; height: 100%; position:absolute; top:0; left:0; overflow:hidden;}
+/** 布局通用（整站变动） **/
+
+/*头部*/
+.header{width: 100%; height: 44px; position:fixed; top:0; left:0; right:0; z-index:99;background-color: #fff;}
+.header_logo{ float: left;}
+.header img{max-height: 44px;}
+.header_right{  float: right; color: #333333;margin-top: 8px;text-align: right;margin-right: 3%;font-weight: bold;}
+.header_right_cn{font-size: 1.1rem;letter-spacing: 2.5px;}
+.header_right_cn span{font-size: 1.1rem;}
+.header_right_cn .icon-call{display: inline-block;background: url(../img/icon_call.png) 50% no-repeat;width: 20px;height: 9.68px;background-size: contain;}
+.header_right_m{font-size: 1.349rem;font-family: arial;font-weight: bold;}
+
+.service{margin: 15px 0;}
+.serviceul{font-size: 0;margin:0 auto;width: 98.125%;}
+.service{padding: 0 3%;}
+.service ul li{display: inline-block;text-align: center;width: 32.5%;}
+.service ul li a{display:  inline-block;text-align: center;}
+.service ul li a i{display:inline-block;width: 59.33%;margin-top: 9px;}
+.service ul li a span{display:block;width: 19%;margin: 5.5px auto 0;background-color: #db1818;height: 2px;}
+.service ul li a p{font-size: 1.2rem;padding: 5px 0 9px 0;}
+
+.in_caseTop{color: #fff;padding: 6px 3%;background-color: #db1818;}
+.in_caseTop_title{float: left;}
+.in_caseTop_titleEn{font-size:2rem;}
+.in_caseTop_titleCn{font-size: 1.4rem;letter-spacing: 5px;}
+.in_caseTop_titleCn i{display: inline-block;background-color: #fff;width: 11%;height: 2px;vertical-align:middle ;margin-right: 5px;}
+.in_caseTop_more{float: right;background: url(../img/icon_add.jpg) 50% no-repeat;width: 9%;height: 30px;background-size: contain;margin: 6px 0;}
+
+.in_case {position:relative;}
+.in_caseTab ul li{font-size: 1.4rem;text-align: center;width: 20%;}
+.in_caseTab ul li a{text-align: center;display: block;padding: 6px 0;margin: 0 13.8%;}
+.in_caseTab ul li a span{display: block;color: #999999;font-size: 1rem;}
+.in_caseTab ul li.active-nav a{border-bottom: 2.5px solid #b1010a;}
+.in_caseCon dl dd{float: left;width: 50%;}
+.in_caseCon dl dd a{display: block;}
+
+.professionField{margin-top: 40px;}
+.professionFieldCon ul li{background-color: #f3f2fa;float: left;width: 25%;position: relative;padding: 10px 0;}
+.professionFieldCon ul li:nth-child(odd){background-color: #e7e7f1;}
+.professionFieldCon ul li>span{position: absolute;display: block;left: 6%;top:8px;font-size: 1.6rem;color: #bbbbbb;}
+.professionFieldCon ul li>span i{display: block;width: 10px;background-color: #db1818;height: 1px;margin: 0 auto;}
+.professionFieldConCn{color: #282828;font-size: 1.4rem;font-weight: bold;margin-left: 28%;}
+.professionFieldConEn{color: #999999;font-size: 6px;font-weight: lighter;letter-spacing: -1px;margin-left: 28%;}
+
+.designExperience{width: 70%;margin: 20px auto;}
+.in_teamList{margin: 0 1.5%;}
+.in_teamList ul li{float: left;width: 33.33%;padding:10px 7px;text-align: center;}
+.in_teamList ul li a{font-size: 0;}
+.in_teamList ul li a>i{}
+.in_teamList ul li a>span{display: block;width: 10px;height: 2px;background-color: #db1818;margin: 0px auto 4px;}
+.in_teamListEn{font-size: 1.4rem;color: #282828;padding-top: 5px;}
+.in_teamListCn{font-size: 1rem;color: #787878;}
+
+.professionDesign_x{background-color: #db1818;color: #fff; position: relative;margin-top: 34px;}
+.professionDesign{width: 32%;margin-left: 3%;padding:17px 0 17px 8% ;}
+.professionDesign>i{width: 10px;height: 1px;background-color: #fff;display: block;}
+.professionDesignEn{font-size: 1.2rem;padding: 2px 0;}
+.professionDesignEn span{font-size: 1.4rem;display: block;}
+.professionDesignCnH{font-size:1rem;padding-bottom: 10px;}
+.professionDesignCnP{font-size: 4px;padding-bottom: 17px;}
+.professionDesignMore{width:16%;display: block;}
+.professionDesignBg{width:51% ;position: absolute;bottom: 1px;right: 3%;}
+.shark{width: 53%;margin: 19px auto 21px;}
+
+.in_customer{border:solid #d7d6d6;border-width: 2px 0 2px 0;}
+.in_customer ul li{float: left;width: 25%;}
+
+.in_news{margin-top: 40px;margin-bottom: 20px;}
+.in_newsList{margin-top: 15px;}
+.in_newsList ul li{padding: 0 3%;}
+.in_newsList ul li:active{background-color: #e7e7f1;}
+.in_newsList ul li a{padding: 16px 0;display: block;}
+.in_newsListDate{border: 2px solid #db1818;display: inline-block;vertical-align: middle;text-align: center;padding: 5px;margin-right: 3px;}
+.in_newsListDateY{font-size: 1.2rem;border-bottom: 1px solid #666666;}
+.in_newsListDateMD{font-size: 1rem;padding-top: 2px;}
+.in_newsListFont{display: inline-block;width: 84%;vertical-align: middle;}
+.in_newsListFontH{font-size: 1.4rem;}
+.in_newsListFontP{color: #666666;font-size: 1rem;padding-top: 4px;line-height: 14px;}
+
+
+
+
+
+/*尾部*/
+.footer{width: 100%;   position: fixed; bottom: 0; left: 0; background: #e7e7f1; z-index: 99;height: 49px;}
+.footer ul li{width: 20%;  float: left; text-align: center;padding: 2% 0; }
+.footer ul .current{background-color: #db1818;}
+.footer ul .current i{color: #fff;}
+.footer ul .current span{color: #fff;}
+.footer ul li i{margin: 0 auto;color: #282828;font-size: 2rem;}
+.footer ul li span{display: block; color: #282828;font-size: 1.2rem;}
+

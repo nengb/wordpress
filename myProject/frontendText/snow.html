@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>snow</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+
+</head>
+<style>
+	body,html,#day_17_03_30{height:100%;overflow: hidden;}
+</style>
+<body>
+    <div id="day_17_03_30">
+    	<div class="snow">
+    		<div class="audio">
+    			<audio controls>
+    				<source src="video/memories.mp3" type="audio/mpeg">
+    				您的浏览器不支持 audio 元素。
+    			</audio>
+    		</div>
+	    	<div class="img clearfix">
+    		<ul>
+    			<li class="active"><img src="images/snow/100.jpg" alt=""></li>
+    			<li ><img src="images/snow/101.jpg" alt=""></li>
+    			<li ><img src="images/snow/103.jpg" alt=""></li>
+    			<li ><img src="images/snow/104.jpg" alt=""></li>
+    			<li ><img src="images/snow/105.jpg" alt=""></li>
+    			<li ><img src="images/snow/106.jpg" alt=""></li>
+    		</ul>
+	    	<div class="font">
+	    		<p>
+	    		请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮请你吃狗粮
+	    		</p>
+	    		
+	    	</div>
+	    	</div>
+
+    		
+    	</div> 
+    </div>
+
+</body>
+
+<script>
+	$(function(){
+		var i = 0;
+		
+		var fontH = $(".font").height();
+		var fontPH = $(".font p").height();
+		function fontAnimate(){
+			$(".font p").css({"top":fontH});
+			$(".font p").animate({"top":-fontPH-100},15000,"linear",fontAnimate);
+
+		}
+
+		fontAnimate();
+
+		var imgTime = setInterval(function(){
+			if(i >=5 ){i=0;}
+			$(".img li").eq(i).addClass("active").siblings().removeClass("active");
+			i++;
+
+		},1500);
+		
+		var time = setInterval(function(){
+			createSnow();
+		},200);
+
+		
+
+		function createSnow(){
+			var snow = document.createElement('i');
+			var width = $("body").width();
+			var height = $("body").height();
+			snow.innerText="❄";
+			var size = Math.round(randomNum(20,80));
+
+			var x = randomNum(0,width);
+			var y = -snowH;
+			var opacity = randomNum(0.4,1);
+			$("#day_17_03_30 .snow").append(snow);
+			$(snow).css({"font-size":size,"left":x,"top":0,"opacity":opacity});
+			// $(snow).animate({"font-size":size});
+			var snowW = $(snow).width();
+			var snowH = $(snow).height();
+			$(snow).animate({"left":randomNum(0,width-1.1*snowW),"top":height-1.1*snowH},5000,function(){
+				$(snow).animate({"opacity":0},1000,function(){$(this).remove()});
+				
+			});
+			
+		}
+
+		function randomNum(num1,num2){
+			return Math.random()*(num2-num1)+num1;
+		}
+
+
+	})
+</script>
+</html>

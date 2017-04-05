@@ -1,0 +1,106 @@
+/*==========全局==========*/
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%;}
+body{font-family: "Microsoft Yahei",Helvetica, Arial, sans-serif,"iconfont"  !important; font-size: 1.4rem; color:#333; background: #FFFFFF;}
+body, button, input, optgroup, select, textarea, h1, h2, h3, h4, h5, h6, p, figure, form, blockquote, ul, ol, li, dl, dd{margin:0;padding:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{display: block;}
+input[type="button"], input[type="submit"], input[type="reset"]{-webkit-appearance:none;}
+img{vertical-align:middle; max-width:100%; border:0;}
+ul,ol{list-style:none;}
+input,textarea,select{outline:none; font-size:100%;}
+a{color:#333; text-decoration: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.table{border-collapse:collapse; border-spacing:0;}
+.clear{clear:both; height:0; overflow:hidden;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.ui-hidden{display:none;}
+.ui-block{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+html,body{height:100%; min-height:100%; position:relative;}
+.page{width:100%; min-height:100%; position:absolute; top:0; left:0; overflow-x:hidden;}
+.page_header{padding-top:44px;}
+.page_footer{padding-bottom: 49px;}
+.page_header_footer{padding: 44px 0 49px 0;}
+.page_full{width:100%; height: 100%; position:absolute; top:0; left:0; overflow:hidden;}
+/** 布局通用（整站变动） **/
+
+
+.in_egg{position: relative;text-align: center;width: 100%;height:100%;background: url(../img/bg_1.jpg) 50%  repeat;background-size:cover ;overflow: hidden;}
+.in_egg .logo{}
+.in_egg .logo img{width: 69%;margin-top: 4%}
+.in_egg{}
+.in_egg a{position: relative;display: block;margin-top: -11%;}
+.in_egg a i img{width: 73%;margin-top:13%;opacity: 0.4;}
+.in_egg a span img{width: 49%;margin-top:13%;position: absolute;left: 26%;top: 6%;animation: egg 2s  linear infinite;-webkit-animation: egg 2s  linear infinite;}
+.in_eggFontA img{width: 60%;margin-top: -5%;}
+.in_eggFontB img{width: 51.42%;margin-left: -11%;}
+
+.allEgg{background: url(../img/bg_3.png) 50% repeat;position: relative;text-align: center;width: 100%;height:100%;background-size:cover;overflow: hidden;}
+.allEgg .fontTop>img{width: 76%;background: url(../img/allEggTop.png) 50% no-repeat;background-size: contain;margin: 1% auto 0;}
+.allEgg .fontTop  .fontYou{position: absolute;top: 3.5%;right: 34%;display: block;}
+.allEgg .fontYou img{width:49% ;}
+.allEgg .fontTop .fontLiao{position: absolute;top: 3.5%;right: 16%;display: block;}
+.allEgg .fontLiao img{width:49% ;}
+
+.allEgg .frame{position: relative;margin-top:1% ;}
+.allEgg .frame>i{width:88%;position: absolute;display: block;margin-left: 5.5%;}
+.allEgg .frame ul{font-size: 0;}
+.allEgg .frame ul li{display: inline-block;width: 30%;margin:5% 0 5% 0;}
+.allEgg .frame ul li a{}
+.allEgg .frame ul li a> img{width: 60%;animation: egg 1.6s linear infinite;-webkit-animation: egg 1.6s linear infinite;}
+.allEgg .frame ul li a span img{width: 61%;display: block;margin: 4% auto;}
+
+
+
+.eatEgg{position: relative;width: 100%;height:100%;background: url(../img/bg_2.jpg) 50%  repeat;background-size:cover;overflow: hidden;}
+.eatEgg .fontTop{position: relative;}
+.eatEgg .fontTop img{width: 43.65%;margin: 4% 0 0 7%;}
+.eatEgg .fontH{text-align: center;}
+.eatEgg .fontH img{width: 80.3%;margin: 4% auto 5%;}
+.eatEgg .con{position: relative;}
+.eatEgg .con span img{width: 15.3%;margin: 2% 0 0 3%;position: absolute;left: 0%;top: -5%;}
+.eatEgg .con div img{width: 46.6%;margin: -5% 0 0 28%;animation: eatEgg 3s linear infinite;-webkit-animation: eatEgg 3s linear infinite;}
+.eatEgg .footerImg {text-align: center;}
+.eatEgg .footerImg img{width:90%;}
+
+
+
+
+
+@-webkit-keyframes egg{
+	40%{
+		-webkit-transform: rotate(0);
+		transform:rotate(0) ;
+		}
+	55%{
+		-webkit-transform: rotate(-20deg);
+		transform:rotate(-20deg) ;
+	}
+	70%{
+		-webkit-transform: rotate(0deg);
+		transform:rotate(0deg) ;
+	}
+	85%{
+		-webkit-transform: rotate(20deg);
+		transform:rotate(20deg) ;
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		transform:rotate(0deg) ;
+	}
+}
+
+.animated1{animation-duration: 1s;-webkit-animation-duration: 1s}
+.animated2{animation-duration: 2s;-webkit-animation-duration: 2s}
+.animated3{animation-duration: 3s;-webkit-animation-duration: 3s}
+.animatede1{animation-delay:1s ;-webkit-animation-delay:1s ;}
+.animatede2{animation-delay:2s ;-webkit-animation-delay:2s ;}
+.animatede3{animation-delay:3s ;-webkit-animation-delay:3s ;}
+
+
+
+
+
+
+
+

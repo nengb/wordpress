@@ -1,0 +1,65 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M737.28 460.8h-296.96c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2h296.96c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2zM839.68 716.8h-399.36c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2h399.36c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2zM440.32 307.2h399.36c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2h-399.36c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2zM276.48 460.8h-92.16c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2h92.16c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2zM276.48 716.8h-92.16c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2h92.16c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2zM276.48 204.8h-92.16c-28.262 0-30.72 22.886-30.72 51.2s2.458 51.2 30.72 51.2h92.16c28.262 0 30.72-22.886 30.72-51.2s-2.458-51.2-30.72-51.2z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "list"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 209,
+        "order": 128,
+        "prevSize": 20,
+        "code": 59652,
+        "name": "list",
+        "ligatures": ""
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 208
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": false,
+    "gridSize": 16,
+    "showLiga": true
+  }
+}

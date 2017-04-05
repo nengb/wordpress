@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>订单详情</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+
+<link rel="stylesheet" href="css/mobiles.css" />
+<script src="touchSlide/TouchSlide.1.1.js" type="text/javascript"></script>
+
+<!-- www.yongneng.net.cn/wordpress Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?e0508b4db7465773164cfef7b98071cd";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<header class="headerTop " > 
+	<span onclick="javascript:window.history.go(-1);" class="headerBack"></span>
+	<h1 class="headerLogo"><img src="img/orders_logo.jpg" width="70%" alt="" style="margin-left: 23%;" ></h1>
+	<a class="headerShare" href=""></a>
+</header>
+<section class="page_footer page_header">
+  	
+  	<div class="ordersCustom clearfix" style="background-color:#f9fcfb ;"><a href="#">找客服&gt;</a></div>
+	<div class="ordersDetails"> 	
+  		<div class="ordersDetailsCon">
+			<div class="ordersDetailsCon_r">2016-08-11</div>
+			<div class="ordersDetailsCon_l">订单编号：<span>201608111913001</span></div>
+			<div class="ordersDetailsCon_l">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：<span>广东省 广州市 天河区 华夏路30号富力盈通大厦601</span></div>
+			<div class="ordersDetailsCon_l">联系方式：<span>张小姐<br />13800000000</span></div>
+  		</div>
+  		<div class="ordersDetailsList">
+  			<ul>
+  				<li>
+  					<div class="ordersCon" >
+	  					<a href="###" class="clearfix" style="border: 0 ">
+		  					<i><img src="img/collect_img_1.jpg" width="100%" alt=""></i>
+		  					<div class="ordersConF">
+			  					<p class="ordersConF_name">产品名字</p>
+			  					<p class="ordersConf_price">￥666 <span>x1</span></p>
+		  					</div>
+	  					</a>
+	  				</div>
+  				</li>
+  				<li>
+  					<div class="ordersCon" >
+	  					<a href="###" class="clearfix" style="border: 0 ">
+		  					<i><img src="img/collect_img_1.jpg" width="100%" alt=""></i>
+		  					<div class="ordersConF">
+			  					<p class="ordersConF_name">产品名字</p>
+			  					<p class="ordersConf_price">￥666 <span>x2</span></p>
+		  					</div>
+	  					</a>
+	  				</div>
+  				</li>
+  			</ul>
+  		</div>
+  		
+  		<div class="ordersDetails_log clearfix" id="wuliu"><a >查看物流<i></i></a></div>
+  		<div class="ordersDetails_t" id="wuliu_con">
+  			<ul>
+  				<li>
+  					<div class="ordersDetails_t_h">2016-08-10&nbsp;&nbsp;周三</div>
+  					<dl>
+  						<dd><span>14:51:55</span>商家正通知快递公司揽件</dd>
+  						<dd><span>19:21:13</span>【扬州市】优速快递 扬州二部收件员 已揽件</dd>
+  						<dd><span>14:51:55</span>【扬州市】扬州转运中心 已发出</dd>
+  						<dd><span>14:51:55</span>【无锡市】快件已到达 无锡转运中心</dd>
+  						<dd><span>14:51:55</span>【无锡市】 无锡运转中心 已发出</dd>
+  					</dl>
+  				</li>
+  			</ul>
+  		</div>
+	</div>
+  			
+	<script>
+		$(function(){
+			$("#wuliu").click(function(){
+				$("#wuliu_con").stop();
+				$("#wuliu_con").slideToggle("fast");
+			});
+			
+		});
+	</script>		
+    
+    
+</section>
+<footer class="footer">
+	
+</footer>
+</body>
+</html>

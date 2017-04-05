@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>提交个人信息</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="bgMar login">
+        <div class="header"><img src="images/cardraw/qckhj.png"alt="" /></div>
+        <p class="tips">
+            考验人品的时候到了，只要留下您的姓名和联系方式就有机会抽取启辰R30、启辰晨风一年使用权大奖。
+        </p>
+        <form action="###" method="post">
+             <div class="name"><i></i><input type="text" placeholder="请输入姓名"/></div>
+             <div class="phone"><i></i><input type="text" placeholder="请输入手机号码"/></div>
+            <button class="btn">确认提交</button>
+        </form>
+        <a class="info">活动规则</a>
+        <div class="framex">
+            <div class="frame rule">
+                <p class="title">活动规则</p>
+                <ol> 
+                    <li>广州车展期间：关注启辰官方微信，参与“码上有礼，辰心放送”活动并留下本人姓名及手机号码，即可参与。</li>
+                    <li>11月21日至11月29日，每天抽取一台启辰R30一年使用大全（现场兑奖）。11月29日抽取终极大奖：一台启辰辰风一年使用权。</li>
+                    <li>每天16：00对当天参与者进行抽选，抽中的参与者如不在现场，将取消中奖者自个并继续抽奖（启辰晨风一年使用权除外）。</li>
+                    <li>终极大奖辰车展期间所有参与这中抽取，后续联系进行兑换。</li>
+                    <li>此活动每人仅限参与一次。</li>
+                    <li>本活动最终解释权归东风日产启辰所有。</li>
+                </ol>
+                <button class="btn">知道了</button>
+            </div>
+        </div>
+        <div class="share">
+            <span>分享好友积攒人品：</span>
+            <a href="###"><img src="images/cardraw/weixin.png" alt="" /></a>
+            <a href="###"><img src="images/cardraw/xlwb.png" alt="" /></a>
+            <a href="###"><img src="images/cardraw/txwb.png" alt="" /></a>
+        </div>
+        <div class="framex shareFrame"><img src="images/cardraw/share_pop.png" alt="" /></div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload=function(){
+        var form = document.getElementsByTagName("form")[0];
+        var name = form.getElementsByClassName("name")[0].getElementsByTagName("input")[0];
+        var phone = form.getElementsByClassName("phone")[0].getElementsByTagName("input")[0];
+        var btn = form.getElementsByClassName("btn")[0];
+        var info = document.getElementsByClassName("info")[0];
+        var framex = document.getElementsByClassName("framex")[0];
+        var frame = framex.getElementsByClassName("frame")[0];
+        var framexBtn = framex.getElementsByClassName("btn")[0];
+        var share = document.getElementsByClassName("share")[0];
+        var shareBtn = share.getElementsByTagName("a");
+        var shareFrame = document.getElementsByClassName("shareFrame")[0];
+        form.onsubmit = function(){
+            if(name.value!="" && phone.value!=""){
+                var str =/^[0-9]{6,13}$/g;
+                if(str.test(phone.value)){
+                    setCookie(name.value,phone.value,1);
+                    window.location.href = "cardraw.html";
+                }else{
+                    alert("请输入正确格式的手机号码")
+                }
+               
+            }else{
+                alert("请输入完整个人信息");
+            }
+            return false;
+        }
+        info.onclick=function(){
+            framex.style.display="block";
+            frame.style.marginTop=-frame.offsetHeight/2+"px";
+        }
+        framexBtn.onclick=function(){
+            framex.style.display="none";
+
+        }
+        for(var i =0;i<shareBtn.length;i++){
+            shareBtn[i].onclick =function(){
+                shareFrame.style.display = "block";
+            }
+        }
+
+    }
+
+    function setCookie(key,value,day){
+        var dates = new Date();
+        dates.setDate(dates.getDate()+day);
+        document.cookie = key+"="+value+";expires="+dates;
+    }
+    function getCookie(key){
+        var arr1 = document.cookie.split("; ");
+        for(var i=0;i<arr1.length;i++){
+            var arr2 = arr1[i].split("=");
+            if(arr2[0]==key){
+                return arr2[1];
+            }
+        }
+        return false;
+    }
+    function removeCookie(key){
+        setCookie(key,"123",-1);
+    }
+</script>
+</html>
