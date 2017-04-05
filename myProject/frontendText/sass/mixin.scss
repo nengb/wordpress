@@ -1,0 +1,56 @@
+// 修改input 或textarea的placeholder字体颜色
+@mixin placeholderColor($tag,$color){
+    #{$tag}::-webkit-#{$tag}-placeholder{ 
+    color: $color; 
+    } 
+    #{$tag}:-moz-placeholder{ 
+    color: $color; 
+    } 
+    #{$tag}::-moz-placeholder{ 
+    color: $color; 
+    } 
+    #{$tag}:-ms-#{$tag}-placeholder{ 
+    color: $color; 
+    }    
+}
+
+// 兼容ie的透明度
+@mixin opacity($opacity:0.5) {
+  opacity: $opacity ;
+  filter: alpha(opacity=$opacity*100);
+}
+
+//css3属性兼容
+@mixin css3($property,$value){
+
+-webkit-#{$property}:$value;
+-moz-#{$property}:$value;
+-ms-#{$property}:$value;
+-o-#{$property}:$value;
+$property:$value;
+}
+
+
+
+
+
+//这是正三角形，size是高
+@mixin regularTriangle($direction,$size,$color){
+    width: 0;
+    height: 0;
+    border-style:solid;
+    border-width:$size/2;
+    @if $direction == bottom {
+      border-color:$color transparent transparent transparent;
+    }
+    @else if $direction == left {
+      border-color: transparent $color transparent transparent;
+    }
+    @else if $direction == top {
+      border-color: transparent transparent $color transparent;
+    }
+    @else if $direction == right {
+      border-color: transparent transparent transparent $color;
+    }
+}
+

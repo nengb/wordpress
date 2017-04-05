@@ -1,0 +1,88 @@
+
+$blueColor:#4490f7;
+$blackColor:#333;
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse: collapse;border-spacing: 0;}
+fieldset,img{border:0;}
+img{-ms-interpolation-mode: bicubic; vertical-align:top;}
+address,caption,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight: normal;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline:none; font-family:"Microsoft Yahei";}
+ol,ul,li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal;}
+q:before,q:after{content:'';}
+a{text-decoration: none;color:$blackColor;outline:none;}
+html{font-family: "微软雅黑",arial;}
+button{outline:none;}
+/*文字排版*/
+.f12{font-size: 12px;}
+.f13{font-size: 13px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.f20{font-size: 20px;}
+.fb{font-weight: bold;} 
+.fn{font-weight: normal;}
+.t2{text-indent: 2em;} 
+.lh150{line-height: 150%;}
+.lh180{line-height: 150%;}
+.lh200{line-height: 180%;}
+.unl{text-decoration: underline;}
+.no_unl{text-decoration: none;}
+ 
+/*定位*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:auto;margin-right: auto;}
+.fl{float:left;*display: inline;}
+.fr{float:right;*display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clear{clear:both;  height:0; font-size: 0; overflow:hidden;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.vm{vertical-align: middle;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute;right:0;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+.none{display:none;}
+.borderBox{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+ .mar864{width: 864px;margin:0 auto;}
+.inlineBlock{
+    display:inline-block;
+    *display:inline;
+    *zoom: 1;
+}
+// 文字溢出用点(省略号)代替
+%textOverflow{
+    white-space:nowrap; 
+    text-overflow:ellipsis; 
+    overflow: hidden; 
+}
+
+/*长度高度*/
+.w1200{width:1200px;}
+.w180{width: 180px;}
+.w130{width: 130px;}
+.w960{width: 960px;}
+.w720{width:720px;}
+.w240{width:240px;}
+.h{height:100%;}
+.h419{height:419px;overflow:hidden;}
+.h385{height:385px;}
+.h330{height:330px;}
+.h300{height:300px;}
+.h500{height:500px;}
+.h296{height: 296px;}
+.h250{height:250px;}
+.paLR12-marT10{padding:0 12px;margin-top:10px;}
+.paB10{padding-bottom:10px;}

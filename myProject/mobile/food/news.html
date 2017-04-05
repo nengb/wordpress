@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<link rel="stylesheet" href="fonts/style.css" />
+		<link rel="stylesheet" href="css/mobiles.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	<!-- www.yongneng.net.cn/wordpress Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?e0508b4db7465773164cfef7b98071cd";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+	<body>
+		<header class="header clearfix">
+			<span onclick="javascript:window.history.go(-1);" class="header_back">返回</span>
+			<div class="headerTitle">餐饮下单</div>
+		</header>
+		
+		<section class="page page_footer page_header">
+		    <div class="newsCon">
+		    	<div class="newsConTop clearfix">
+		    		<p class="fl">2016-08-20</p>
+		    		<p class="fr">星期五</p>
+		    	</div>
+		    	<div class="newsConList">
+		    		<ul>
+		    			<li class="clearfix">
+		    				<a href="###">
+		    					<div class="newsConListImg"><img src="img/news_img_1.jpg" alt=""></div>
+		    					<div class="newsConListR">
+		    						<p class="newsConListR_title">培根蔬萃双层牛堡超值套餐 配薯条(中)+可口可乐(中)</p>
+		    						<div class="newsConListRInfo">
+		    							<p class="newsConListRInfo_price"><span class="price_h">￥</span><span class="price_num">18</span><span class="price_end">.00</span></p>
+		    							<p class="newsConListRInfo_sell">已售<span>124</span>份</p>
+		    							<div class="newsConListRInfo_num">
+		    								<i class="icon-sub"></i>
+		    								<input type="text" class="number" value="1">
+		    								<i class="icon-add"></i>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</a>
+		    			</li>
+		    			<li class="clearfix">
+		    				<a href="###">
+		    					<div class="newsConListImg"><img src="img/news_img_2.jpg" alt=""></div>
+		    					<div class="newsConListR">
+		    						<p class="newsConListR_title">培根蔬萃双层牛堡超值套餐 配薯条(中)+可口可乐(中)</p>
+		    						<div class="newsConListRInfo">
+		    							<p class="newsConListRInfo_price"><span class="price_h">￥</span><span class="price_num">18</span><span class="price_end">.00</span></p>
+		    							<p class="newsConListRInfo_sell">已售<span>124</span>份<i></i></p>
+		    							<div class="newsConListRInfo_num">
+		    								<i class="icon-sub"></i>
+		    								<input type="text" class="number" value="1">
+		    								<i class="icon-add"></i>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</a>
+		    			</li>
+		    			<li class="clearfix">
+		    				<a href="###">
+		    					<div class="newsConListImg"><img src="img/news_img_3.jpg" alt=""></div>
+		    					<div class="newsConListR">
+		    						<p class="newsConListR_title">培根蔬萃双层牛堡超值套餐 配薯条(中)+可口可乐(中)</p>
+		    						<div class="newsConListRInfo">
+		    							<p class="newsConListRInfo_price"><span class="price_h">￥</span><span class="price_num">18</span><span class="price_end">.00</span></p>
+		    							<p class="newsConListRInfo_sell">已售<span>124</span>份</p>
+		    							<div class="newsConListRInfo_num">
+		    								<i class="icon-sub"></i>
+		    								<input type="text" class="number" value="1">
+		    								<i class="icon-add"></i>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</a>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    
+		    
+		</section>
+		
+		
+		
+		
+		
+		<footer class="footer">
+			<div class="newsF">
+				<i></i>
+				<div class="icon-order"><span class="newsPriceNum">1</span></div>
+		    	<p class="newsF_price"><span class="price_h">￥</span><span class="price_num">18</span><span class="price_end">.00</span></p>
+		    	<a class="newsF_order" href="pay.html">预定</a>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				var newsConListLi=$('.newsConList>ul>li');
+				var newsConListAdd=newsConListLi.find('.icon-add');
+				var newsConListInput=newsConListLi.find('.number');
+				var newsConListSub=newsConListLi.find('.icon-sub');
+				var newsPrice=newsConListLi.find('.newsConListRInfo_price .price_num');
+				var newsPriceSum=$('.newsF .price_num');
+				var newsPriceNum=$('.newsF .newsPriceNum');
+				function countMoney(){   		//计算总共的费用
+					var newsPriceNumText=0;
+					var newsPriceSumText=0;
+					for(var i=0;i<=newsConListLi.length-1;i++){
+						 newsPriceNumText=newsPriceNumText+parseInt(newsConListInput.eq(i).val());
+						 newsPriceSumText=parseInt(newsConListInput.eq(i).val())*parseInt(newsPrice.eq(i).text())+newsPriceSumText;
+					}
+					newsPriceNum.text(newsPriceNumText);
+					newsPriceSum.text(newsPriceSumText);
+				}
+				
+
+				countMoney();
+				newsConListLi.each(function(index){
+					
+					newsConListAdd.eq(index).on('click',function(){
+						if(newsConListInput.eq(index).val()<99){
+							newsConListSub.eq(index).css('visibility','visible');
+							newsConListInput.eq(index).css('visibility','visible');
+							newsConListInput.eq(index).val(parseInt(newsConListInput.eq(index).val())+1);
+							newsPriceSum.text()
+						}
+						countMoney();
+						
+					})
+					newsConListSub.eq(index).on('click',function(){
+						if(newsConListInput.eq(index).val()>0){
+							newsConListInput.eq(index).val(parseInt(newsConListInput.eq(index).val())-1);
+						}else{
+							$(this).css('visibility','hidden');
+							newsConListInput.eq(index).css('visibility','hidden');
+						}
+						
+						countMoney();
+						
+					})
+					newsConListInput.eq(index).keyup(function(){  
+		            var c=$(this);  
+		            if(/[^\d]/.test(c.val())){//替换非数字字符  
+		              var temp_amount=c.val().replace(/[^\d]/g,'');  
+		              $(this).val(temp_amount);  
+		            }  
+		         })
+					newsConListInput.eq(index).blur(function(){
+						if(newsConListInput.eq(index).val()>0){
+							newsConListSub.eq(index).css('visibility','visible');
+							newsConListSub.eq(index).css('visibility','visible');
+							
+						}else{
+							newsConListSub.eq(index).css('visibility','hidden');
+							newsConListInput.eq(index).css('visibility','hidden');
+						}
+						if(newsConListInput.eq(index).val()>99){
+		  				 	newsConListInput.eq(index).val(99);
+		  				 }
+						countMoney();
+					})
+					
+				})
+				
+			});
+		</script>
+	</body>
+	
+	
+</html>

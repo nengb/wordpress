@@ -1,0 +1,118 @@
+/*==========全局==========*/
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%;}
+body{font-family: "Microsoft Yahei",Helvetica, Arial, sans-serif,"iconfont"  !important; font-size: 1.4rem; color:#333; background: #FFFFFF;}
+body, button, input, optgroup, select, textarea, h1, h2, h3, h4, h5, h6, p, figure, form, blockquote, ul, ol, li, dl, dd{margin:0;padding:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{display: block;}
+input[type="button"], input[type="submit"], input[type="reset"]{-webkit-appearance:none;}
+img{vertical-align:middle; max-width:100%; border:0;}
+ul,ol{list-style:none;}
+input,textarea,select{outline:none; font-size:100%;}
+a{color:#333; text-decoration: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.table{border-collapse:collapse; border-spacing:0;}
+.clear{clear:both; height:0; overflow:hidden;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.ui-hidden{display:none;}
+.ui-block{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+html,body{height:99.9%; min-height:100%; position:relative;}
+.page{width:100%; min-height:100%; position:absolute; top:0; left:0; overflow-x:hidden;}
+.page_header{padding-top:44px;}
+.page_footer{padding-bottom: 49px;}
+.page_header_footer{padding: 44px 0 49px 0;}
+.page_full{width:100%; height: 100%; position:absolute; top:0; left:0; overflow:hidden;}
+/** 布局通用（整站变动） **/
+
+/*头部*/
+.header{width: 100%; height: 44px; position:fixed; top:0; left:0; right:0; z-index:99; background-color: #fff;padding: 0 3%;}
+.header_logo{ float: left;}
+.header img{height: 24.5px;}
+.header_right{ float: right; color: #fff;margin-top: 8px;}
+.header_right_cn{font-size: 1rem;}
+.header_right_cn span{font-size: 1.1rem;}
+.header_right_cn .icon-call{display: inline-block;background: url(../img/icon_call.png) 50% no-repeat;width: 20px;height: 9.68px;background-size: contain;}
+.header_right_m{font-size: 1.349rem;font-family: arial;font-weight: bold;}
+
+.flow{padding: 14px 0;}
+.flow ul{font-size: 0;margin:0 auto;width: 87%;}
+.flow ul li{display: inline-block;margin: 0 1.25%;width: 22.41%;}
+.flow ul li a{display: block;text-align: center;}
+.flow ul li a i{display: inline-block;width: 38.33%;margin-top: 9px;}
+.flow ul li a p{font-size: 1.2rem;color: #282828;padding: 5px 0 9px 0;}
+
+.in_caseTop{background:url(../img/bg.jpg);padding: 0 3%;}
+.in_caseTop_title{color: #fff;font-size: 1.2rem;line-height:25px;float: left;}
+.in_caseTop_title span{font-size: 1rem;font-family: arial;}
+.in_caseTop ul li{float: left;padding-right:7.5% ;}
+.in_caseTop ul li a{color: #fff;font-size: 1.2rem;border-bottom: 5px solid transparent;display: block;padding-top: 6px;display: block; ;}
+.in_caseTop ul li.active a{border-bottom: 2.5px solid #2e2d2c;}
+.in_caseTop_more{color: #fff;float: right;line-height: 25px;font-size: 1.8rem;}
+.in_caseCon{margin: 8px 3% 0;}
+.in_caseCon ul li{width: 100%;}
+.in_caseCon ul li a{float: left;padding-right: 3%;width: 33.3%;padding-bottom: 9px;}
+.in_caseCon ul li a:nth-child(1){width: 50%;}
+.in_caseCon ul li a:nth-child(2){width: 50%;}
+.in_caseCon ul li a{display: block;}
+.in_caseInfo{background:url(../img/bg.jpg);color: #fff;margin: 15px 3% 20px;text-align: center;}
+.in_caseInfoCn{padding-top: 8px;}
+.in_caseInfoCn span{display: inline-block;font-weight: bold;letter-spacing: 12px;vertical-align: middle;font-size: 1.6rem;}
+.in_caseInfoCn i{display: inline-block;width: 15.7%;height: 1px;background-color: #fff;vertical-align: middle;}
+.in_caseInfoEn{font-family: arial;padding-bottom: 3px;}
+
+.in_showList ul {margin: 6px 4px 16px 8px;}
+.in_showList ul li{float: left;width: 25%;padding-right: 4px;padding-bottom: 4px;}
+.in_showImg{margin-bottom: 20px;}
+
+.in_aboutCon{margin: 9px 3% 20px;}
+.in_aboutConImg{width: 36%;float: left;}
+.in_aboutConF{float: left;width:64%;padding-left: 4.6%;}
+.in_aboutConFH{color: #333333;font-weight: bold;}
+.in_aboutConFP{color: #454545;font-size: 1.2rem;padding-top: 5px;text-indent: 2em;}
+.in_aboutConFP span{color: #da251c;}
+
+.in_teamSwiper{margin: 0 3%;}
+.in_teamSwiperImg{position: absolute;width:27% ;border: 3px solid #ca170e;left: 0;top: 8px;}
+.in_teamSwiperImg i{}
+.in_teamSwiperCon{float: left;width: 100%;padding-left: 32%;border: 1px solid #e9e9e9;margin-top: 9px;height: 9rem;overflow: hidden;}
+.in_teamSwiperConH{color: #282828;font-size: 1.2rem;font-weight: bold;padding-top: 6px;}
+.in_teamSwiperConH i{width: 10px;height: 1px;background-color: #959595;display: inline-block;vertical-align: middle;margin: 0 2px 0 4px;}
+.in_teamSwiperConH  span{color: #676767;font-size:1rem;font-weight: normal;}
+.in_teamSwiperConP{color: #323232;font-size: 1.05rem;font-weight: bold;padding: 2px 0;;}
+.in_teamSwiperConResume{margin-bottom: 5px;}
+.in_teamSwiperConResume span{color: #676767;font-size: 1rem;margin-right: 20px;}
+
+.in_teamList{margin-bottom: 20px;margin-top: 10px;}
+.in_teamList ul {padding: 0 2%;}
+.in_teamList ul li{width:20% ;float: left;padding:0 1% ;}
+.in_teamList ul li a{border: 2px solid #727272;display: block;}
+.in_teamList ul li.active a{border-color: #ca170e;}
+
+.in_newsConImg{margin-top: 12px;}
+.in_newsConImg i{float: left;width: 39%;font-weight: bold;}
+.in_newsConImgF{float: left;width: 50%;margin-left: 3%;padding-top: 2px;}
+.in_newsConImgFH{font-size: 1.05rem;color: #282828;}
+.in_newsConImgFP{font-size: 1rem;color: #454545;padding-top: 7px;line-height: 1.4rem;}
+.in_newsConImgFP span{color: #da251c;}
+.in_newsCon ul li dl{border-top: 1px solid #dadada;width: 94%;margin: 15px auto;padding-top: 7px;}
+.in_newsCon ul li dl dd{padding-bottom: 10px;}
+.in_newsCon ul li dl dd a{font-size: 1rem;}
+.in_newsCon ul li dl dd a:active{color: #da251c ;}
+.in_newsCon ul li dl dd span{float: right;}
+
+.in_customer{border:solid #da251c;border-width: 2px 0 2px;padding: 9px 0;margin-bottom: 35px;}
+.in_customer ul{font-size:0 ;}
+.in_customer ul li{display: inline-block;width: 33.3%;padding: 0 2%;}
+
+
+
+
+/*尾部*/
+.footer{width: 100%;   position: fixed; bottom: 0; left: 0; background: #fff; z-index: 99;height: 49px;border-top: 2px solid #da251c;}
+.footer ul li{width: 25%;  float: left; text-align: center;padding: 2% 0; }
+.footer ul li a{color: #454545;}
+.footer ul li i{margin: 0 auto;font-size: 2rem;}
+.footer ul li span{display: block;font-size: 1.2rem;}
+.footer ul .current{background:url(../img/bg.jpg);color: #fff;}
+.footer ul .current a{color: #fff;}
+

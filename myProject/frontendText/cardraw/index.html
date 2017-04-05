@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="bgMar index">
+        <div class="header"><img src="images/cardraw/bg02.jpg" alt=""></div>
+        <div class="titleMsyl"><img src="images/cardraw/msyl.png" alt="" /></div>
+        <div class="btn draw">我在车展 马上拿奖</div>
+        <a class="btn nodraw" href="telfare.html">不在现场 试试运气</a>
+        <a href="###" class="info">活动说明</a>
+        
+        <div class="framex">
+            <div class="frame descript">
+                <p class="title">活动说明</p>
+                <p class="con">抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强，东风日产看启辰，抽奖活动哪家强东风日产看启辰，抽奖活动哪家强东风日产看启辰，抽奖活动哪家强</p>
+                <p class="con">东风日产看启辰，抽奖活动哪家强东风日产看启辰，抽奖活动哪家强东风日产看启辰，抽奖活动哪家强东风日产看启辰，抽奖活动哪家强</p>
+                <p class="con">心动了吗，那就马上行动！</p>
+                <p class="con">参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，参与车展现场抽奖活动，</p>
+                <a class="btn" href="cardraw.html">马上抽奖</a>
+            </div>
+        </div>
+        <div class="framex">
+            <div class="frame confirm">
+                <p class="confirmP">请确认你是否在车展现场，</p>
+                <p class="confirmP">以免无法兑奖，</p>
+                <p class="confirmP">不在车展现场还可抽取话费哦！</p>
+                <button class="btn">确认</button>
+                <button class="btn">重新选择</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload=function(){
+        var framex = document.getElementsByClassName("framex");
+        var frame = document.getElementsByClassName("frame");
+        var descript = document.getElementsByClassName("descript")[0];
+        var confirm = document.getElementsByClassName("confirm")[0];
+        var info = document.getElementsByClassName("info")[0];
+        var draw = document.getElementsByClassName("draw")[0];
+        var nodraw = document.getElementsByClassName("nodraw")[0];
+        var confirmBtn = confirm.getElementsByTagName("button");
+        info.onclick = function(){
+            // rule.parentNode.style.display = "block";
+            // rule.style.marginTop = -rule.offsetHeight/2+"px";
+            descript.parentNode.style.display = "block";
+            descript.style.marginTop = -descript.offsetHeight/2+"px";
+        }
+       
+        draw.onclick = function(){
+            confirm.parentNode.style.display = "block";
+            confirm.style.marginTop = -confirm.offsetHeight/2+"px";
+        }
+        nodraw.onclick = function(){
+
+
+        }
+        confirmBtn[0].onclick = function(){
+            confirm.parentNode.style.display = "none";
+            descript.parentNode.style.display = "block";
+            descript.style.marginTop = -descript.offsetHeight/2+"px";
+        }
+        confirmBtn[1].onclick = function(){
+            confirm.parentNode.style.display = "none";
+        }
+
+
+
+    }   
+</script>
+</html>

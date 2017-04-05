@@ -1,0 +1,249 @@
+html{overflow-y: scroll; overflow-x:hidden; _background-image:url(about:blank); _background-attachment:fixed;}
+body {font-family:"Microsoft Yahei",Arial,'Hiragino Sans GB',sans-serif; font-size:14px; background-color: #FFFFFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,sup,sub{margin:0;padding:0}
+fieldset,img{border:0}
+ul,ol,li {list-style:none;}
+img{-ms-interpolation-mode: bicubic; vertical-align:top;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline:none; font-family:"Microsoft Yahei";}
+.imgmiddle,input,select{vertical-align:middle;}
+.table{border-collapse:collapse;border-spacing:0;}
+.clear{clear:both; height:0; font-size: 0; overflow:hidden;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+a {text-decoration:none; color:#333333;}
+a:hover{ text-decoration:none; color:#55ceff;}
+a:active{blr:expression(this.onFocus=this.blur());}
+.tc{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.mar1200{width: 1200px; margin: 0 auto;}
+.word{word-break:break-all;}
+.dn{display:none;}
+hr{border: 0; margin: 0;}
+.ui-hidden{display:none;}
+.ui-block{display:block;}
+
+
+
+.header_x{}
+.header{margin-top: 17px;position: absolute;width: 1200px;}
+.logo{float: left;}
+.nav{float: right;}
+.nav ul li{float: left;}
+.nav ul>li+li{border-left: 1px solid #b5def2;margin-left: 50px;}
+.nav ul li a{color: #646464;font-size: 16px;padding-left: 50px;}
+.nav ul li a:hover{color: #2aaced;}
+.nav ul li.active a{color: #2aaced;}
+
+.banner{top: 0;background: url(../img/header_banner_bg.png);height: 660px;left: 0;padding-top: 202px;width: 100%;text-align:center ;background-color: #e0f5ff;z-index: -1;}
+.bannerTop{position: relative;width: 252px;margin: 0 auto;}
+.bannerTop i{display: inline-block;position: absolute;width: 57px;height: 1px;background-color: #7fd4ff;top: 12px;visibility: hidden;}
+.bannerTop span{display: inline-block;width: 252px;background-color: #2aaced;border-radius: 5px;padding:2.5px 0 ;visibility: hidden;}
+.bannerTopLeft{left: -77px;}
+.bannerTopRight{right: -77px;}
+.bannerH{margin-top: 34px;}
+.bannerP{font-size: 18px;font-family: simsun;letter-spacing: 4px;color: #043046;margin-top: 46px;}
+.bannerCode{position: relative;width: 185px;margin:  24px auto 0 ;}
+.bannerCode span{display: inline-block;border: 3px solid #cfefff;padding: 8px;}
+.bannerCode i{width: 17px;height: 17px;display: block;position: absolute;border: solid #2aaced;}
+.bannerCode:hover i{animation-duration: 2s;}
+.bannerCode .l-t{border-width: 3px 0 0 3px;top: -1px;left: -1px;animation:codeL_t 8s linear infinite;}
+.bannerCode .r-t{border-width: 3px 3px 0 0 ;top:-1px;left: 166px;animation:codeR_t 8s linear infinite;}
+.bannerCode .l-b{border-width: 0 0 3px 3px;top: 166px;left: -1px;animation:codeL_b 8s linear infinite;}
+.bannerCode .r-b{border-width: 0 3px 3px 0;top:166px;right: -1px;animation:codeR_b 8s linear infinite;}
+.bannerScan{font-size: 16px ;color: #2aaced;letter-spacing: 4px;margin-top: 19px;}
+.banner_icon_down{width: 22px;height: 43px;display: inline-block;background: url(../img/icon_down.png) 50% no-repeat;margin-top: 133px;}
+
+
+.in_about{text-align: center;background-color: #e0f5ff;padding-top: 123px;}
+.in_aboutTitle{}
+.in_aboutTitleEn{font-size: 60px;color: #282828;letter-spacing: -1px;}
+.in_aboutTitleCn{color: #787878;font-size: 24px;font-weight: lighter;letter-spacing: 2px;margin-top: -9px;}
+.in_aboutP{color: #454545;line-height: 28px;width: 863px;margin: 68px auto 0;font-weight: lighter;letter-spacing: 1px;}
+.in_aboutLogo{margin-top: 84px;padding-bottom: 150px;}
+.in_contact{background-color: #2aaced;color: #fff;text-align: center;}
+.in_contactTitle{padding-top: 84px;}
+.in_contactTitle .in_aboutTitleEn{color: #fff;}
+.in_contactTitle .in_aboutTitleCn{color: #fff;}
+.in_contactList_x{width: 874px;overflow: hidden;margin: 75px auto 0;padding-bottom: 84px;}
+.in_contactList{text-align: left;width: 900px;}
+.in_contactList dl{float: left;width: 300px;}
+.in_contactList dt{font-size: 22px;letter-spacing: 2px;padding-bottom: 26px;}
+.in_contactList dd p{padding-bottom: 14px;}
+
+.footer{background-color: #e0f5ff;text-align: center;font-size: 12px;color: #333;padding: 68px 0;}
+.footer p{padding:8.5px 0 ;}
+
+
+
+
+
+/*css3动画*/
+
+.animated{
+	visibility: visible !important;
+	animation-duration:2s ;
+}
+
+
+@keyframes codeL_t{
+	0% {height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	2.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	2.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	22.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	25%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	27.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	27.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	47.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	50%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	52.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	52.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	72.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	75%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	77.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	77.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	97.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	100%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+}
+@keyframes codeR_t{
+	0%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	2.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	2.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	22.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	25%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	27.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	27.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	47.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	50%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	52.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	52.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	72.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	75%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	77.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	77.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	97.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	100%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+}
+@keyframes codeL_b{
+	0%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	2.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	2.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	22.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	25%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	27.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	27.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	47.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	50%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	52.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	52.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	72.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	75%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	77.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	77.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	97.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	100%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+}
+@keyframes codeR_b{
+	0%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	2.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	2.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	22.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	25%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	27.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	27.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	47.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	50%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	52.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	52.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	72.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	75%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	77.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	77.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	97.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	100%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+}
+
+
+
+@-webkit-keyframes codeL_t{
+	0% {height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	2.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	2.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	22.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	25%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	27.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	27.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	47.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	50%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	52.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	52.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	72.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	75%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	77.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	77.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	97.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	100%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+}
+@-webkit-keyframes codeR_t{
+	0%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	2.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	2.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	22.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	25%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	27.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	27.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	47.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	50%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	52.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	52.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	72.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	75%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	77.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	77.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	97.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	100%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+}
+@-webkit-keyframes codeL_b{
+	0%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	2.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	2.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	22.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	25%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	27.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	27.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	47.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	50%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	52.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	52.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	72.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	75%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	77.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	77.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	97.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	100%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+}
+@-webkit-keyframes codeR_b{
+	0%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+	2.5%{height: 34px;width:0px;left: -1px;top:149px;border-width: 0 0 3px 3px;}
+	2.6%{height: 34px;width:0px;left: -1px;top:149px;border-width: 3px 0 0 3px;}
+	22.5%{height: 34px;width:0px;left: -1px;top:-1px;border-width: 3px 0 0 3px;}
+	25%{height: 17px;width: 17px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	27.5%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 0 0 3px;}
+	27.6%{height: 0px;width: 34px;left: -1px;top: -1px;border-width: 3px 3px 0 0;}
+	47.5%{height: 0px;width: 34px;left: 149px;top: -1px;border-width: 3px 3px 0 0;}
+	50%{height: 17px;width: 17px;left: 166px;top:-1px;border-width: 3px 3px 0 0;}
+	52.5%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 3px 3px 0 0;}
+	52.6%{height: 34px;width: 0px;left: 183px;top:-1px;border-width: 0 3px 3px 0;}
+	72.5%{height: 34px;width: 0px;left: 183px;top:149px;border-width: 0 3px 3px 0;}
+	75%{height: 17px;width: 17px;left: 166px;top:166px;border-width: 0 3px 3px 0;}
+	77.5%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 3px 3px 0;}
+	77.6%{height: 0px;width: 34px;left: 149px;top:183px;border-width: 0 0 3px 3px;}
+	97.5%{height: 0px;width: 34px;left: -1px;top:183px;border-width: 0 0 3px 3px;}
+	100%{height: 17px;width: 17px;left: -1px;top:166px;border-width: 0 0 3px 3px;}
+}
+
+
+
+

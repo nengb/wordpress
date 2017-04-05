@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>telfare</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="bgMar">
+        <div class="telfare">
+            <p class="title">人品不错哦！</p>
+            <p class="tips">恭喜您抽中价值<span>30</span>元的手机话费！请留下联系方式，24小时内话费将为您送上，请留意短信，谢谢！</p>
+            <div class="telfareImg"><img src="images/cardraw/y10.png" alt="" /></div>
+            <p class="tips">请输入手机号码24小时内为您充值</p>
+
+            <form action="###" method="post">
+                <div class="phone"><i></i><input type="text" placeholder="请输入手机号码"/></div>
+                <button class="btn">确认提交</button>
+            </form>
+            <div class="share">
+                <span>分享好友积攒人品：</span>
+                <a href="###"><img src="images/cardraw/weixin.png" alt="" /></a>
+                <a href="###"><img src="images/cardraw/xlwb.png" alt="" /></a>
+                <a href="###"><img src="images/cardraw/txwb.png" alt="" /></a>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        var num = Math.round(random(1,3));
+        var tips = document.getElementsByClassName("tips")[0].getElementsByTagName("span")[0];
+        var telfareImg=document.getElementsByClassName("telfare")[0].getElementsByTagName("img")[0];
+        telfareImg.src="images/cardraw/y"+num+"0.png";
+        tips.innerText =num+"0";
+     
+    }
+    function random(num1,num2){
+        return Math.random()*(num2-num1)+num1;
+    }
+</script>
+</html>

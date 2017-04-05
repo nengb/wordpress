@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<link rel="stylesheet" href="css/animate.min.css" />
+<link rel="stylesheet" href="css/mobiles.css" />
+<title>圣诞</title>
+
+<!-- www.yongneng.net.cn/wordpress Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?e0508b4db7465773164cfef7b98071cd";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+	<div id="dowebok">
+		<div class="section">
+			<div class="in_egg">
+				<div class="logo  fadeInDown animated3"><img src="img/logo.png" alt=""></div>
+				<div class="egg"><a onclick="$.fn.fullpage.moveSectionDown();"><i class=" zoomIn animated3"><img src="img/eggBg.png" alt=""></i><span class="fadeInDown animated3"><img src="img/egg.png" alt=""></span></a></div>
+				<div class="in_eggFontA fadeInUp animated"><img src="img/fontXuYuan.png" alt=""></div>
+				<div class="in_eggFontB lightSpeedIn animated3"><img src="img/fontLiao.png" alt=""></div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<div class="allEgg ">
+				<div class="fontTop "><img src="img/allEggTop.png" alt=""><i class="fontYou" ><img src="img/fontYou.png" alt=""></i><i class="fontLiao" ><img src="img/fontLiao1.png" alt=""></i></div>
+				<div class="frame">
+					<i><img src="img/frame.png" alt=""></i>
+					<ul>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_1.png" alt=""><span><img src="img/allEggF_1.jpg" alt=""></span></a></li>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_2.png" alt=""><span><img src="img/allEggF_2.jpg" alt=""></span></a></li>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_3.png" alt=""><span><img src="img/allEggF_3.jpg" alt=""></span></a></li>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_4.png" alt=""><span><img src="img/allEggF_4.jpg" alt=""></span></a></li>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_5.png" alt=""><span><img src="img/allEggF_5.jpg" alt=""></span></a></li>
+						<li><a onclick="$.fn.fullpage.moveTo(3,0);"><img src="img/egg_6.png" alt=""><span><img src="img/allEggF_6.jpg" alt=""></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section" >
+			<div class="eatEgg" >
+				<div class="fontTop"><img src="img/fontEat.png" alt=""></div>
+				<div class="fontH"><img src="img/fontSD.png" alt=""></div>
+				<div class="con">
+					<span><img src="img/iconWazi.png" alt=""></span>
+					<div class="conEatEgg"><a onclick="$.fn.fullpage.moveTo(1,0);"><img src="img/eggFood.png" alt=""></a></div>
+				</div>
+				<div class="footerImg"><img src="img/eatEggFooterImg.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js" ></script>
+<script>
+	$(function(){
+	    $('#dowebok').fullpage({
+	    	afterLoad: function(anchorLink, index){
+				var loadedSection = $(this);
+				//using index
+				if(index == 1){
+					$('.in_egg .logo').addClass("fadeInDown animated3");
+					$('.in_egg .egg a i').addClass("zoomIn animated3");
+					$('.in_egg .egg a span').addClass("fadeInDown animated3");
+					$('.in_egg .in_eggFontA').addClass("fadeInUp animated");
+					$('.in_egg .in_eggFontB').addClass("lightSpeedIn animated3");
+					
+					$('.allEgg .fontYou').removeClass("bounceInLeft animated ");
+					$('.allEgg .fontLiao').removeClass("bounceInRight animated animatede1");
+					
+				}
+				if(index == 2){
+					$('.allEgg .fontYou').addClass("bounceInLeft animated ");
+					$('.allEgg .fontLiao').addClass("bounceInRight animated animatede1");
+					
+					
+					$('.in_egg .logo').removeClass("fadeInDown animated3");
+					$('.in_egg .egg a i').removeClass("zoomIn animated3");
+					$('.in_egg .egg a span').removeClass("fadeInDown animated3");
+					$('.in_egg .in_eggFontA').removeClass("fadeInUp animated");
+					$('.in_egg .in_eggFontB').removeClass("lightSpeedIn animated3");
+					
+					$('.eatEgg .fontTop').removeClass("bounceInDown animated3");
+					$('.eatEgg .fontH').removeClass("fadInDown animated3");
+					$('.eatEgg .con span img').removeClass("bounceInDown animated2");
+					$('.eatEgg .con div').removeClass("zoomIn animated1");
+					$('.eatEgg .footerImg').removeClass("zoomIn animated1");
+					
+				}
+				if(index == 3){
+					$('.eatEgg .fontTop').addClass("bounceInDown animated3");
+					$('.eatEgg .fontH').addClass("fadInDown animated3");
+					$('.eatEgg .con span img').addClass("bounceInDown animated2");
+					$('.eatEgg .con div').addClass("zoomIn animated1");
+					$('.eatEgg .footerImg').addClass("zoomIn animated1");
+					
+					
+				}
+			}
+	    });
+	});
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>cardraw</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="bgMar cardraw">
+        <div class="header"><img src="images/cardraw/bg02.jpg" alt=""></div>
+        <p class="title">幸运“触”手可及</p>
+        <p class="tips">轻触任何一款启辰车牌即可参与抽奖</p>
+        <ul class="carList">
+            <li><a href="###"><img src="images/cardraw/qc_01.png" alt="" /></a></li>
+            <li><a href="###"><img src="images/cardraw/qc_02.png" alt="" /></a></li>
+            <li><a href="###"><img src="images/cardraw/qc_03.png" alt="" /></a></li>
+            <li><a href="###"><img src="images/cardraw/qc_04.png" alt="" /></a></li>
+            <li><a href="###"><img src="images/cardraw/qc_05.png" alt="" /></a></li>
+            <li><a href="###"><img src="images/cardraw/qc_06.png" alt="" /></a></li>
+        </ul>
+    </div>
+            
+</body>
+<script type="text/javascript">
+    window.onload=function(){
+        var carList = document.getElementsByClassName("carList")[0];
+        var carListLi = carList.getElementsByTagName("li");
+        for(var i=0;i<carListLi.length;i++){
+
+            carListLi[i].onclick =function(){
+                var number = Math.round()
+            }
+        }
+    }
+</script>
+</html>

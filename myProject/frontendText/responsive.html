@@ -1,0 +1,52 @@
+。。<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport"  content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+     <script type="text/javascript">
+        window.onload = function(){
+             /*响应式布局--forefather*/
+            var forefatherHead = document.getElementById("forefatherHead");
+            var forefatherHeadBtn = document.getElementById("forefatherHeadBtn");
+            forefatherHead.style.height = "0px";
+            forefatherHeadBtn.onclick = function(){
+                var height = forefatherHead.offsetHeight;
+                if(height >= 0 && height <= 50){
+                  forefatherHead.style.height ="100px";
+                  forefatherHeadBtn.style.backgroundImage="url('images/responsive/bg02.png')";
+
+                }if(height >= 50 && height <= 100){
+                  forefatherHead.style.height = "0px";
+                  forefatherHeadBtn.style.backgroundImage="url('images/responsive/bg03.png')";
+                }
+           }
+        }
+     </script>
+     
+    <body>
+    <div id="day_17_02_15">
+        <div class="forefather">
+            <div class="header pr" id="forefatherHead">
+                <span class="pa"  id="forefatherHeadBtn"></span>
+            </div>
+            <div class="logo"><img src="images/responsive/bg01.png" height="134" width="293" alt=""></div>
+            <ul class="menu">
+                <li><a href="###"><p>-艰苦撒旦</p><p>1341546</p></a></li>
+                <li><a href="###"><p>-艰苦撒旦</p><p>1341546</p></a></li>
+                <li><a href="###"><p>-艰苦撒旦</p><p>1341546</p></a></li>
+                <li><a href="###"><p>-艰苦撒旦</p><p>1341546</p></a></li>
+            </ul>
+            <div class="menuImg"><img src="images/responsive/bg04.png" height="25" width="618"></div>
+            <div class="footer clearfix">
+                <div class="left fl"><img src="images/responsive/bg06.png"  alt="" /></div>
+                <div class="right fr"><img src="images/responsive/bg05.png"  alt="" />
+                <p>witness this never before seen revelation of beatuy and wonder!Enlivened by mirth,provoking surprise and marvelous feats,the Forefathers design group fashions the world' most electrifying brands,websites and illustrations.</p></div>
+            </div>
+        </div>
+    </div>
+ 
+    </body>
+</html>

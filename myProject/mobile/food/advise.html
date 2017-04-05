@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>余额充值</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<link rel="stylesheet" href="fonts/style.css" />
+		<link rel="stylesheet" href="swiper/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/mobiles.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="swiper/swiper-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	<!-- www.yongneng.net.cn/wordpress Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?e0508b4db7465773164cfef7b98071cd";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+	<body>
+		<header class="header clearfix">
+			<div class="headerTitle">点评建议</div>
+		</header>
+		
+		<section class="page page_footer page_header">
+		    <div class="adviseTop">
+		    	<div class="newsConTop clearfix">
+		    		<p class="fl">2016-08-20</p>
+		    		<p class="fr">星期五</p>
+		    	</div>
+		    	<div class="foodList swiper-container">
+		    		<ul class="swiper-wrapper">
+		    			<li class="swiper-slide"><a href="#"><img src="img/news_img_1.jpg" alt=""></a></li>
+		    			<li class="swiper-slide"><a href="#"><img src="img/news_img_2.jpg" alt=""></a></li>
+		    			<li class="swiper-slide"><a href="#"><img src="img/news_img_3.jpg" alt=""></a></li>
+		    			<li class="swiper-slide"><a href="#"><img src="img/news_img_1.jpg" alt=""></a></li>
+		    			<li class="swiper-slide"><a href="#"><img src="img/news_img_2.jpg" alt=""></a></li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="advisePanel">
+		    	<form method="post" action=""> 
+		    		<div class="advisePanelTop clearfix">
+			    		<p class="advisePanelTop_l fl">给我们打个分吧</p>
+			    		<p class="advisePanelTop_r fr">您的支持是我们最大的动力！</p>
+		    		</div>
+		    		<div class="advisePaneList">
+		    			<ul >
+		    				<li>
+		    					<p class="advisePaneList_h"><label class="advisePaneList_h">饭菜质量</label></p>
+		    					<label class="advisePaneList_p">
+		    						好评
+		    						<input type="radio" name="foodQu" id="positive" class="hidden_radio" checked="checked"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						良好
+		    						<input type="radio" name="foodQu" id="credit" class="hidden_radio" />
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						一般
+		    						<input type="radio" name="foodQu" id="moderate" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						差评
+		    						<input type="radio" name="foodQu" id="negative" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					
+		    					<span class="icon-positive fr"></span>
+		    				</li>
+		    				<li>
+		    					<p class="advisePaneList_h"><label class="advisePaneList_h">服务质量</label></p>
+		    					<label class="advisePaneList_p">
+		    						好评
+		    						<input type="radio" name="serveQu" id="positive" class="hidden_radio" checked="checked"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						良好
+		    						<input type="radio" name="serveQu" id="credit" class="hidden_radio" />
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						一般
+		    						<input type="radio" name="serveQu" id="moderate" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						差评
+		    						<input type="radio" name="serveQu" id="negative" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					
+		    					<span class="icon-positive fr"></span>
+		    				</li>
+		    				<li>
+		    					<p class="advisePaneList_h"><label class="advisePaneList_h">餐厅环境</label></p>
+		    					<label class="advisePaneList_p">
+		    						好评
+		    						<input type="radio" name="environmentQu" id="positive" class="hidden_radio" checked="checked"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						良好
+		    						<input type="radio" name="environmentQu" id="credit" class="hidden_radio" />
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						一般
+		    						<input type="radio" name="environmentQu" id="moderate" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					<label class="advisePaneList_p">
+		    						差评
+		    						<input type="radio" name="environmentQu" id="negative" class="hidden_radio"/>
+		    						<span class="radio_btn icon-select"></span>
+		    					</label>
+		    					
+		    					<span class="icon-positive fr"></span>
+		    				</li>
+		    			</ul>
+		    		</div>
+		    		<div class="QuSubmit"><input type="submit" /></div>
+		    	</form>
+		    </div>
+		    
+		    <div class="advisePanel">
+		    	<form method="post" action=""> 
+		    		<div class="advisePanelTop clearfix">
+			    		<p class="advisePanelTop_l fl">说点啥</p>
+			    		<p class="advisePanelTop_r fr">请留下您的宝贵意见！</p>
+		    		</div>
+		    		<textarea></textarea>
+		    		<div class="QuSubmit"><input type="submit" /></div>
+		    	</form>
+		    </div>
+		</section>
+		
+		<footer class="footer">
+			<ul>
+				<li>
+					<a href="news.html">
+						<span class="icon-order"></span>
+						<p class="footer_p">餐饮下单</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<span class="icon-write"></span>
+						<p class="footer_p">点评建议</p>
+					</a>
+				</li>
+				<li>
+					<a href="perInfo.html">
+						<span class="icon-account"></span>
+						<p class="footer_p">个人信息</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	<script>
+		$(function(){
+			var foodListSwiper = new Swiper ('.foodList', {
+			    autoplay : 3000,
+			    autoplayDisableOnInteraction : false,
+			    loop: true,
+			    slidesPerView:4,
+			    spaceBetween:15,
+			});
+			
+			var advisePaneListLi=$('.advisePaneList>ul>li');
+			advisePaneListLi.each(function(index){
+				
+				advisePaneListLi.eq(index).children('.advisePaneList_p').each(function(indexLabel){
+					$(this).on('click',function(){
+						if(indexLabel==0){
+							advisePaneListLi.eq(index).children('span').removeClass('icon-credit').removeClass('icon-moderate').removeClass('icon-negative').addClass('icon-positive');
+						}
+						else if(indexLabel==1){
+							advisePaneListLi.eq(index).children('span').removeClass('icon-positive').removeClass('icon-moderate').removeClass('icon-negative').addClass('icon-credit');
+						}
+						else if(indexLabel==2){
+							advisePaneListLi.eq(index).children('span').removeClass('icon-credit').removeClass('icon-positive').removeClass('icon-negative').addClass('icon-moderate');
+						}
+						else if(indexLabel==3){
+							advisePaneListLi.eq(index).children('span').removeClass('icon-credit').removeClass('icon-moderate').removeClass('icon-positive').addClass('icon-negative');
+						}
+					})
+				})
+			})
+			
+		})
+	</script>
+</html>
