@@ -805,6 +805,7 @@ button{
         }
     }
     @media only screen and (max-width:979px){
+<<<<<<< HEAD
         .forefather{
             .footer{
                 .left{
@@ -815,12 +816,27 @@ button{
                     margin:0 auto;
                     p{
                         text-align:center;
+=======
+        #day_17_02_15{
+            .forefather{
+                .footer{
+                    .left{
+                        display:none;
+                    }
+                    .right{
+                        float:none;
+                        margin:0 auto;
+                        p{
+                            text-align:center;
+                        }
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
                     }
                 }
             }
         }
     }
     @media only screen and (max-width:730px){
+<<<<<<< HEAD
         .forefather{
             .menu{
                 li{
@@ -859,6 +875,50 @@ button{
                         margin:0 auto;
                     }
                     
+=======
+        #day_17_02_15{
+            .forefather{
+                .menu{
+                    li{
+                        width: 100%;
+                        margin-bottom:10px;
+                        a{
+                            padding:0;
+                            p{
+                                display:inline;
+                                line-height:60px;
+
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    @media only screen and (max-width:450px){
+        #day_17_02_15{
+            .forefather{
+                .menuImg{
+                    display:none;
+
+                }
+                .menu{
+                    margin-bottom:30px;
+                }
+                .footer{
+                    
+                    .right{
+                        width: 100%;
+                        img{
+                            display:none;
+                        }
+                        p{
+                            width: 81%;
+                            margin:0 auto;
+                        }
+                        
+                    }
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
                 }
             }
         }
@@ -1372,6 +1432,7 @@ button{
         }
     }
     @media screen and(max-width:835px){
+<<<<<<< HEAD
        .header{
             .mar864{width: 540px;}
        } 
@@ -1395,11 +1456,39 @@ button{
                 }
                 .footer{
                     margin-top:40px;
+=======
+        #day_17_02_17{
+           .header{
+                .mar864{width: 540px;}
+           } 
+            .content{
+                .mar864{
+                    width: 540px;
+                    .nav{
+                        background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
+                        background-size:107%;
+                    }
+                    .leftNav{
+                        width: 109px;
+                        background-size:465%;
+                    }
+                    .center{
+                        width: 431px;
+                        margin:0;
+                    }
+                    .right{
+                        display:none;
+                    }
+                    .footer{
+                        margin-top:40px;
+                    }
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
                 }
             }
         }
     }
     @media screen and(max-width:560px){
+<<<<<<< HEAD
        .header{
             .mar864{width: 80%;}
             .right{
@@ -1430,6 +1519,40 @@ button{
                
                 .footer{
                     margin-top:40px;
+=======
+        #day_17_02_17{
+           .header{
+                .mar864{width: 80%;}
+                .right{
+                    display:none;
+                }
+            } 
+            .content{
+                .mar864{
+                    width:80%;
+                    min-width:360px;
+                    .nav{
+                        background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
+                        background-size:107%;
+                    }
+                    .leftNav{
+                        background:none;
+                        width: 100%;
+
+                        a{
+                            display:block;
+                            background:#aebc71;
+                            margin-bottom:5px;
+                        }
+                    }
+                    .center{
+                        display:none;
+                    }
+                   
+                    .footer{
+                        margin-top:40px;
+                    }
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
                 }
             }
         }
@@ -2539,6 +2662,10 @@ button{
         
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
 //飘雪Demo
 #day_17_03_30{
     .snow{
@@ -2598,6 +2725,7 @@ button{
 
         }
     }
+<<<<<<< HEAD
 }
 //canvas实现画图工具
 #day_17_04_19{
@@ -2612,4 +2740,7 @@ button{
             position:absolute;
         }
     }
+=======
+    
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
 }
