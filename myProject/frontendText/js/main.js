@@ -2,10 +2,7 @@
 
 
 window.onload=function(){
-<<<<<<< HEAD
     // 原生js
-=======
->>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
     var nativeJs = (function(){
         //公共函数区 --------------start--------------
         //解决IE8之类不支持getElementsByClassName
@@ -33,19 +30,11 @@ window.onload=function(){
         //获取鼠标位置
         function getMousePos(event,obj) { 
             var obj = obj || null;
-<<<<<<< HEAD
             var e = event || window.event; 
             var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft; 
             var scrollY = document.documentElement.scrollTop || document.body.scrollTop; 
             var x = e.pageX || e.clientX + scrollX; 
             var y = e.pageY || e.clientY + scrollY; 
-=======
-                var e = event || window.event; 
-                var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft; 
-                var scrollY = document.documentElement.scrollTop || document.body.scrollTop; 
-                var x = e.pageX || e.clientX + scrollX; 
-                var y = e.pageY || e.clientY + scrollY; 
->>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
             if(obj!=null && obj!="document"){
                 //获取元素离页面顶部距离
                 var objX = obj.getBoundingClientRect().left+scrollX;
@@ -173,10 +162,6 @@ window.onload=function(){
             return false;
         }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
         //公共函数区 -----------end------------------
 
         //页面js代码 --------------------------------
@@ -1347,10 +1332,6 @@ window.onload=function(){
             var snakeFrameW = snakeFrame.clientWidth;
             var snakeFrameH = snakeFrame.clientHeight;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
             //游戏参数
             var v  ;  //一格大小
             var vX ;    //x轴
@@ -1737,7 +1718,6 @@ window.onload=function(){
                 setCookie(key,"123",-1);
             }
         })();
-<<<<<<< HEAD
         //canvas实现画图工具
         var day_17_04_19 = (function(){
             var day_17_04_19 = document.getElementById('day_17_04_19');
@@ -1833,10 +1813,6 @@ window.onload=function(){
             }
 
         })();
-=======
-
-
->>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
 
 
     })();
