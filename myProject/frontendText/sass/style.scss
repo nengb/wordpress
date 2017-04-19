@@ -805,66 +805,60 @@ button{
         }
     }
     @media only screen and (max-width:979px){
-        #day_17_02_15{
-            .forefather{
-                .footer{
-                    .left{
-                        display:none;
-                    }
-                    .right{
-                        float:none;
-                        margin:0 auto;
-                        p{
-                            text-align:center;
-                        }
+        .forefather{
+            .footer{
+                .left{
+                    display:none;
+                }
+                .right{
+                    float:none;
+                    margin:0 auto;
+                    p{
+                        text-align:center;
                     }
                 }
             }
         }
     }
     @media only screen and (max-width:730px){
-        #day_17_02_15{
-            .forefather{
-                .menu{
-                    li{
-                        width: 100%;
-                        margin-bottom:10px;
-                        a{
-                            padding:0;
-                            p{
-                                display:inline;
-                                line-height:60px;
+        .forefather{
+            .menu{
+                li{
+                    width: 100%;
+                    margin-bottom:10px;
+                    a{
+                        padding:0;
+                        p{
+                            display:inline;
+                            line-height:60px;
 
-                            }
                         }
                     }
                 }
-            }   
-        }
+            }
+        }   
     }
     @media only screen and (max-width:450px){
-        #day_17_02_15{
-            .forefather{
-                .menuImg{
-                    display:none;
+        .forefather{
+            .menuImg{
+                display:none;
 
-                }
-                .menu{
-                    margin-bottom:30px;
-                }
-                .footer{
-                    
-                    .right{
-                        width: 100%;
-                        img{
-                            display:none;
-                        }
-                        p{
-                            width: 81%;
-                            margin:0 auto;
-                        }
-                        
+            }
+            .menu{
+                margin-bottom:30px;
+            }
+            .footer{
+                
+                .right{
+                    width: 100%;
+                    img{
+                        display:none;
                     }
+                    p{
+                        width: 81%;
+                        margin:0 auto;
+                    }
+                    
                 }
             }
         }
@@ -1378,68 +1372,64 @@ button{
         }
     }
     @media screen and(max-width:835px){
-        #day_17_02_17{
-           .header{
-                .mar864{width: 540px;}
-           } 
-            .content{
-                .mar864{
-                    width: 540px;
-                    .nav{
-                        background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
-                        background-size:107%;
-                    }
-                    .leftNav{
-                        width: 109px;
-                        background-size:465%;
-                    }
-                    .center{
-                        width: 431px;
-                        margin:0;
-                    }
-                    .right{
-                        display:none;
-                    }
-                    .footer{
-                        margin-top:40px;
-                    }
+       .header{
+            .mar864{width: 540px;}
+       } 
+        .content{
+            .mar864{
+                width: 540px;
+                .nav{
+                    background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
+                    background-size:107%;
+                }
+                .leftNav{
+                    width: 109px;
+                    background-size:465%;
+                }
+                .center{
+                    width: 431px;
+                    margin:0;
+                }
+                .right{
+                    display:none;
+                }
+                .footer{
+                    margin-top:40px;
                 }
             }
         }
     }
     @media screen and(max-width:560px){
-        #day_17_02_17{
-           .header{
-                .mar864{width: 80%;}
-                .right{
+       .header{
+            .mar864{width: 80%;}
+            .right{
+                display:none;
+            }
+        } 
+        .content{
+            .mar864{
+                width:80%;
+                min-width:360px;
+                .nav{
+                    background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
+                    background-size:107%;
+                }
+                .leftNav{
+                    background:none;
+                    width: 100%;
+
+                    a{
+                        display:block;
+                        background:#aebc71;
+                        margin-bottom:5px;
+                    }
+                }
+                .center{
                     display:none;
                 }
-            } 
-            .content{
-                .mar864{
-                    width:80%;
-                    min-width:360px;
-                    .nav{
-                        background:url("../images/responsive_2/45.jpg") 23% 48% no-repeat;
-                        background-size:107%;
-                    }
-                    .leftNav{
-                        background:none;
-                        width: 100%;
-
-                        a{
-                            display:block;
-                            background:#aebc71;
-                            margin-bottom:5px;
-                        }
-                    }
-                    .center{
-                        display:none;
-                    }
-                   
-                    .footer{
-                        margin-top:40px;
-                    }
+               
+                .footer{
+                    margin-top:40px;
                 }
             }
         }
