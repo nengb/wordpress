@@ -2,6 +2,10 @@
 
 
 window.onload=function(){
+<<<<<<< HEAD
+    // 原生js
+=======
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
     var nativeJs = (function(){
         //公共函数区 --------------start--------------
         //解决IE8之类不支持getElementsByClassName
@@ -29,11 +33,19 @@ window.onload=function(){
         //获取鼠标位置
         function getMousePos(event,obj) { 
             var obj = obj || null;
+<<<<<<< HEAD
+            var e = event || window.event; 
+            var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft; 
+            var scrollY = document.documentElement.scrollTop || document.body.scrollTop; 
+            var x = e.pageX || e.clientX + scrollX; 
+            var y = e.pageY || e.clientY + scrollY; 
+=======
                 var e = event || window.event; 
                 var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft; 
                 var scrollY = document.documentElement.scrollTop || document.body.scrollTop; 
                 var x = e.pageX || e.clientX + scrollX; 
                 var y = e.pageY || e.clientY + scrollY; 
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
             if(obj!=null && obj!="document"){
                 //获取元素离页面顶部距离
                 var objX = obj.getBoundingClientRect().left+scrollX;
@@ -161,7 +173,10 @@ window.onload=function(){
             return false;
         }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
         //公共函数区 -----------end------------------
 
         //页面js代码 --------------------------------
@@ -1332,7 +1347,10 @@ window.onload=function(){
             var snakeFrameW = snakeFrame.clientWidth;
             var snakeFrameH = snakeFrame.clientHeight;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
             //游戏参数
             var v  ;  //一格大小
             var vX ;    //x轴
@@ -1719,8 +1737,106 @@ window.onload=function(){
                 setCookie(key,"123",-1);
             }
         })();
+<<<<<<< HEAD
+        //canvas实现画图工具
+        var day_17_04_19 = (function(){
+            var day_17_04_19 = document.getElementById('day_17_04_19');
+            var body = document.getElementsByTagName("body")[0];
+
+            //显示的图层
+            var cans = day_17_04_19.getElementsByTagName('canvas')[0];
+            var canvas= cans.getContext('2d');
+            //鼠标的图层
+            var mouse = document.createElement("canvas");
+            var can_mouse = mouse.getContext('2d');
+            mouse.width = 400;
+            mouse.height = 400;
+            // 画画的图层
+            var obj = document.createElement("canvas");
+            var can_obj = obj.getContext('2d');
+            obj.width = 400;
+            obj.height = 400;
+
+            var color = day_17_04_19.getElementsByClassName('color')[0];
+            var range = day_17_04_19.getElementsByClassName('range')[0];
+            var button = day_17_04_19.getElementsByTagName('button')[0];
+            var buttonClear = day_17_04_19.getElementsByTagName('button')[1];
+            button.onclick = function(){
+                cans.style.background = color.value;
+            }
+            buttonClear.onclick = function(){
+                canvas.clearRect(0,0,400,400);
+                can_obj.clearRect(0,0,400,400);
+                can_mouse.clearRect(0,0,400,400);
+            }
+            cans.onmousemove = function(ev){
+                draw(ev,drawMouse);
+            };
+
+            cans.onmousedown = function(ev){
+                var event = ev||window.event;
+                body.style.userSelect="none";
+                can_obj.beginPath();
+                cans.onmousemove = function(ev){
+                    draw(ev,drawMouse,drawBrush);
+                }
+                document.onmouseup = function(){
+
+                    body.style.userSelect="auto";
+                    cans.onmousemove = function(ev){
+                        draw(ev,drawMouse);
+                    };
+                   
+                }
+            }
+            
+            function draw(ev,fun1,fun2){
+                var event = ev||window.event;
+                var x = getMousePos(ev).x-cans.offsetLeft;
+                var y = getMousePos(ev).y-cans.offsetTop;
+                if(fun1){
+                    fun1(x,y);
+                }
+                if(fun2){
+                    fun2(x,y);
+                }
+
+                combine();
+
+                
+            }
+            //绘制鼠标
+            function drawMouse(x,y){
+                can_mouse.beginPath();
+                can_mouse.clearRect(0,0,400,400);
+                can_mouse.beginPath();
+                can_mouse.arc(x,y,range.value/2,0,2*Math.PI);
+                can_mouse.fillStyle=color.value;
+                can_mouse.fill();
+                can_mouse.closePath();
+
+            }
+            //绘制画笔
+            function drawBrush(x,y){
+                can_obj.lineTo(x,y);
+                can_obj.lineWidth = range.value;
+                can_obj.strokeStyle = color.value;
+                can_obj.stroke();
+            }
+            //合并两个图层
+            function combine(){
+                canvas.clearRect(0,0,400,400);
+                canvas.globalCompositeOperation = 'source-over';
+                canvas.drawImage(obj,0,0,400,400);
+                canvas.drawImage(mouse,0,0,400,400);
+
+            }
+
+        })();
+=======
 
 
+>>>>>>> c2e99c47d536ebb8d60e8b1cb5c5818fdec48881
 
 
     })();
